@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiYv9XY65f7RXNIm1HGn6p7d_Yn7pREB2kQtv2ERdGOQ&s=10");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 600px;
+            width: 100%;
+        }
+
+        .noir {
+            display: flex;
+            justify-content: space-around;
+            color: #fff;
+            padding: 20px 0;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            margin: 30px 10px;
+            padding: 40px;
+        }
+
+        .noir button {
+            border: 1px solid coral;
+            background-color: coral;
+            color: #fff;
+            border-radius: 15px;
+            padding: 10px 20px;
+        }
+
+        header hr {
+            border: 1px white solid;
+        }
+
+        .modern {
+            position: absolute;
+            top: 180px;
+            left: 80px;
+            color: #fff;
+        }
+
+        .modern h5 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .modern b {
+            color: coral;
+        }
+
+        .modern p {
+            margin: 15px 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .modern button {
+            border: 1px solid coral;
+            background-color: coral;
+            padding: 10px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .scroll {
+            margin-top: 130px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .black {
+            background-color: black;
+            padding: 50px 80px;
+        }
+
+        .card {
+            color: #fff;
+            display: flex;
+
+        }
+
+        .cards {
+            background-color: rgb(15, 14, 14);
+            padding: 40px 40px;
+        }
+
+        .carder img {
+            width: 500px;
+        }
+
+        .cards h1 {
+            font-size: 50px;
+        }
+
+        .cards h5 {
+            color: coral;
+        }
+
+        .cards h3 {
+            color: coral;
+            margin-top: 50px;
+        }
+
+        .cards p {
+            margin: 20px 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .cards button {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid coral;
+            background-color: coral;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-right: 450px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+
+        }
+
+        .menued {
+            padding: 50px 80px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .menus {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menues h1 {
+            font-size: 50px;
+        }
+
+        .menues h5 {
+            color: coral;
+        }
+
+        .starters {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .starters p {
+            color: coral;
+        }
+
+        .menu hr {
+            margin-top: 10px;
+            border: 1px solid slategray;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+        }
+
+        .number {
+            width: 75px;
+            color: coral;
+            font-size: 15px;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .info h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .info p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: #8b867d;
+        }
+
+        #form {
+            margin: 10px 0;
+        }
+
+        .meet {
+            background-color: black;
+            padding: 50px 80px;
+        }
+
+        .kim {
+            display: flex;
+            color: #fff;
+
+        }
+
+        .chef button {
+            background: #c88a45;
+            color: #17110c;
+            padding: 14px 22px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            position: absolute;
+            bottom: -2070px;
+            left: 350px;
+            right: 830px;
+            border-radius: 10px;
+            border: 1px solid coral;
+        }
+
+        .people {
+            margin: 80px 60px;
+        }
+
+        .people h5 {
+            color: #c88a45;
+        }
+
+        .people p {
+            color: #c88a45;
+        }
+
+        .people h3 {
+            color: #c88a45;
+            font-size: 30px;
+        }
+
+        .people div {
+            margin: 20px 0;
+
+        }
+
+        .years {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .yearsed {
+            margin-right: 80px;
+
+        }
+
+        .yearsed h3 {
+            margin: 10px 0;
+        }
+
+        .night {
+            background-color: #fff;
+            padding: 50px 80px;
+        }
+
+        .nighted {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nighted p {
+            margin: 10px 30px;
+        }
+
+        .Know h5 {
+            color: #c88a45;
+            margin-bottom: 10px 0;
+
+        }
+
+        .com {
+            display: flex;
+            gap: 18px;
+        }
+
+        .coms {
+            position: relative;
+            overflow: hidden;
+            margin: 30px 0;
+        }
+
+        .comse {
+            position: absolute;
+            bottom: -2900px;
+            left: 90px;
+            color: #fff;
+        }
+
+        .comsed {
+            position: absolute;
+            bottom: -2900px;
+            left: 500px;
+            color: #fff;
+        }
+
+        .comseg {
+            position: absolute;
+            bottom: -2900px;
+            left: 900px;
+            color: #fff;
+        }
+
+        .our {
+            background-color: black;
+            padding: 50px 80px;
+        }
+
+        .ours {
+            display: flex;
+        }
+
+        .oure img {
+            height: 350px;
+        }
+
+        .ourd {
+            padding: 0 90px;
+            color: #fff;
+        }
+
+        .ourd h1 {
+            margin: 20px 0;
+        }
+
+        .card p {
+            color: #888383;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .ourd h5 {
+            color: #c88a45;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .event {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px 0;
+            border-bottom: 1px solid #2b2927;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px 0;
+        }
+
+        #events {
+            color: #c88a45;
+        }
+
+        #plans {
+            margin: 20px 0;
+            padding: 14px 25px;
+            border: none;
+            background: #c88a45;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .book {
+            background-color: #c88a45;
+            padding: 50px 80px;
+        }
+
+        .books {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .booked {
+            background-color: #000;
+            margin: 0px 160px;
+            padding: 20px;
+        }
+
+        #date {
+            border: 1px solid #c88a45;
+            display: inline-block;
+            padding-right: 160px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 10px;
+            margin: 5px;
+            color: #fff;
+        }
+
+        #dated {
+            border: 1px solid #c88a45;
+            display: inline-block;
+            padding-right: 210px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 10px;
+            margin: 5px;
+            color: #fff;
+        }
+
+        #date p {
+            color: #929090;
+        }
+
+        .booked h1 {
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        #check {
+            width: 95%;
+            border: none;
+            background-color: #c88a45;
+            padding: 10px 0;
+            margin: 10px 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="noir">
+            <h1>NOIR</h1>
+            <nav class="menu">
+                <a href="#">MENU</a>
+                <a href="#">STORY</a>
+                <a href="#">EXPERIENCE</a>
+                <a href="#">EVENTS</a>
+            </nav>
+            <button>BOOK A TABLE</button>
+        </nav>
+        <hr>
+        <nav class="modern">
+            <h5><b>MODERN ASIAN DINING</b></h5>
+            <h1>A NIGHT <br>WORTH <br><b>Remembering.</b></h1>
+            <p>Bold flavors, open-fire cooking and contemporary Asian cuisine <br> created for unforgettable nights.</p>
+            <button>Discover The Menu</button>
+            <div class="scroll">SCROLL TO EXPLORE</div>
+        </nav>
+    </header>
+    <section class="black">
+        <nav class="card">
+            <nav class="carder">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa2HairtT112h6wE85WC--kKDW3JGKJMLVNO7FwdyhUQ&s=10"
+                    alt="">
+            </nav>
+            <nav class="cards">
+                <h5>TONIGH'S SPECIAL</h5>
+                <h1>Black Garlic <br> Wafyu</h1>
+                <p>Charcoal-grilled premium beef, black garlic butter, crispy shallots and our signature fermented chili
+                    glaze.</p>
+                <h3>$42</h3>
+                <button>Add To Your Experiene</button>
+            </nav>
+        </nav>
+    </section>
+    <section class="menued">
+        <nav class="menus">
+            <nav class="menues">
+                <h5>FROM OUR KITCHEN</h5>
+                <h1>The Menu</h1>
+            </nav>
+            <p>A menu inspired by Asian flavors, modern trchniques and ingredients <br> form around the world.</p>
+        </nav>
+
+        <nav class="starters">
+            <nav class="begin">
+                <h3>Starters</h3>
+            </nav>
+            <p>TO BEGIN</p>
+        </nav>
+        <hr id="form">
+        <nav class="item">
+            <nav class="number">01</nav>
+            <nav class="info">
+                <h2>Crispy Tuna</h2>
+                <p>Sesame.Lime.Chili.Avocado</p>
+            </nav>
+            <nav class="price">$16</nav>
+        </nav>
+
+        <hr id="form">
+        <nav class="item">
+            <nav class="number">02</nav>
+            <nav class="info">
+                <h2>Miso Eggplant</h2>
+                <p>Black Garlic . Herbs . Sesame</p>
+            </nav>
+            <nav class="price">$14</nav>
+        </nav>
+
+        <hr id="form">
+        <nav class="item">
+            <nav class="number">03</nav>
+            <nav class="info">
+                <h2>Fire Chicken</h2>
+                <p>Chili . Honey . Sesame . Lime</p>
+            </nav>
+            <nav class="price">$18</nav>
+        </nav>
+
+        <nav class="starters">
+            <nav class="begin">
+                <h3>Mains</h3>
+            </nav>
+            <p>FORM THE FIRE</p>
+        </nav>
+        <hr id="form">
+        <nav class="item">
+            <nav class="number">01</nav>
+            <nav class="info">
+                <h2>Black Garlic Wagyu</h2>
+                <p>Charcoal . Fermented Chili . Shallots</p>
+            </nav>
+            <nav class="price">$42</nav>
+        </nav>
+
+        <hr id="form">
+        <nav class="item">
+            <nav class="number">02</nav>
+            <nav class="info">
+                <h2>Miso Salmon</h2>
+                <p>White Miso . Ginger . Spring Onion</p>
+            </nav>
+            <nav class="price">$29</nav>
+        </nav>
+
+        <hr id="form">
+        <nav class="item">
+            <nav class="number">03</nav>
+            <nav class="info">
+                <h2>Truffle Ramen</h2>
+                <p>Mushroom Broth . Egg . Truffle Oil</p>
+            </nav>
+            <nav class="price">$24</nav>
+        </nav>
+
+        <nav class="starters">
+            <nav class="begin">
+                <h3>Desserts</h3>
+            </nav>
+            <p>SOMETHING SWEET</p>
+        </nav>
+        <hr id="form">
+        <nav class="item">
+            <nav class="number">01</nav>
+            <nav class="info">
+                <h2>Black Sesame Ice Cream</h2>
+                <p>Dark Chocolate . Sesame Brittle</p>
+            </nav>
+            <nav class="price">$11</nav>
+        </nav>
+
+        <hr id="form">
+        <nav class="item">
+            <nav class="number">02</nav>
+            <nav class="info">
+                <h2>Matcha Tiramisu</h2>
+                <p>Matcha . Mascarpone . Coffe</p>
+            </nav>
+            <nav class="price">$12</nav>
+        </nav>
+    </section>
+
+
+    <section class="meet">
+        <nav class="kim">
+            <nav class="chef">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDLlCShiTycWqh5ulLjKMxleR9393WnWETVOLkebhXSw&s=10">
+                <button>HEAD CHEF</button>
+            </nav>
+            <nav class="people">
+                <h5>BEHIND THE KITCHEN</h5>
+                <h1>Meet Daniel Kim.</h1>
+                <div>Daniel's cooking combines the bold flavors of his childhood with <br> modern European techniques
+                </div>
+                <h2>"I don't want peole to just eat. I want them to <br> remember."</h2>
+                <nav class="years">
+                    <nav class="yearsed">
+                        <h3>15+</h3>
+                        <p>YEARS EXPERIENCE</p>
+                    </nav>
+                    <nav class="yearsed">
+                        <h3>27</h3>
+                        <p>SIGNATURE DISHES</p>
+                    </nav>
+
+                </nav>
+
+            </nav>
+        </nav>
+    </section>
+
+    <section class="night">
+        <nav class="nighted">
+            <nav class="Know">
+                <h5>OUR PHILOSOPHY</h5>
+                <h1>Know Your Ingredients.</h1>
+            </nav>
+            <p>Great dishes begin with preat ingredients. We carefully select every element that enters our kitchen.</p>
+        </nav>
+
+        <nav class="com">
+            <nav class="coms">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg_UT2P8P5Duexu194cEXsdCQ8uFKvIpdliSkEpgB4w&s=10">
+            </nav>
+            <nav class="comse">
+                <div>01</div>
+                <h2>Japanese Mushrooms</h2>
+                <p>Earthy, delicate and full of flavor.</p>
+            </nav>
+
+            <nav class="coms">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg_UT2P8P5Duexu194cEXsdCQ8uFKvIpdliSkEpgB4w&s=10">
+            </nav>
+            <nav class="comsed">
+                <div>02</div>
+                <h2>Japanese Mushrooms</h2>
+                <p>Earthy, delicate and full of flavor.</p>
+            </nav>
+
+
+            <nav class="coms">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg_UT2P8P5Duexu194cEXsdCQ8uFKvIpdliSkEpgB4w&s=10">
+            </nav>
+            <nav class="comseg">
+                <div>03</div>
+                <h2>Japanese Mushrooms</h2>
+                <p>Earthy, delicate and full of flavor.</p>
+            </nav>
+        </nav>
+
+    </section>
+    <section class="our">
+        <nav class="ours">
+            <nav class="oure">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSU32iSba_sMp2s8k3zUeBqXa5inNb_oCwwZgJj0WLVA&s=10">
+            </nav>
+            <nav class="ourd">
+                <h5>PRIVATE EVENTS</h5>
+                <h1>Your Night. Our Kitchen.</h1>
+                <p>Form intimate dinners to unforgettable celebrations, NOIR can become your private dining room</p>
+                <nav class="event">
+                    <div id="events">Birthdays</div>
+                    <div>10-30 Guests</div>
+                </nav>
+                <nav class="event">
+                    <div id="events">Corporate Dinners</div>
+                    <div>15-60 Guests</div>
+                </nav>
+                <nav class="event">
+                    <div id="events">Private Celebrations</div>
+                    <div>10-50 Guests</div>
+                </nav>
+                <nav class="event">
+                    <div id="events">Chef Experiences</div>
+                    <div>Request</div>
+                </nav>
+                <button id="plans">Plan Your Event</button>
+            </nav>
+        </nav>
+
+        </nav>
+    </section>
+
+
+    <section class="book">
+        <nav class="books">
+            <nav class="bookes">
+                <h1>Your Table Is Waiting.</h1>
+                <p>Choose your preferrd date, time and number of guests. Our team will take care of the rest.</p>
+            </nav>
+            <nav class="booked">
+                <h1>Book Your Table</h1>
+                <div id="date">
+                    <p>DATE</p>
+                    <h3>24/10/2026</h3>
+                </div>
+                <div id="dated">
+                    <p>TIME</p>
+                    <h3>20:00</h3>
+                </div>
+                <div id="date">
+                    <p>GUESTS</p>
+                    <h3>02 Guests</h3>
+                </div>
+                <div id="date">
+                    <p>SEATING</p>
+                    <h3>Dining Room</h3>
+                </div>
+                <button id="check">Check Availability</button>
+
+            </nav>
+
+        </nav>
+    </section>
+</body>
+
+</html>
